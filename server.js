@@ -32,5 +32,8 @@ app.get('/', (req, res) =>{
     res.render('base', { title : "Login System"});
 })
 
+app.get('/register', (req, res) =>{
+    res.render('register');
+})
 
-app.listen(port, ()=>{ console.log("Lostening to the server on http://localhost:3000")});
+app.listen(port, ()=>{ console.log("Listening to the server on http://localhost:3000")});
